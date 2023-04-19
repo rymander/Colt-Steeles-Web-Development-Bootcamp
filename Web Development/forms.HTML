@@ -5,17 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms Demo</title>
+    <title>Forms/Buttons Demo</title>
 </head>
 
 <body>
-    <h1>FORMS DEMO</h1>
+    <h1>FORMS AND BUTTONS DEMO</h1>
 
-    <form action="">YO
-        <input type="text" placeholder="Type your favorite food">
-        <input type="password" placeholder="password">
+    <form action="/wow">
+        <div>
+            <label for="favoriteFood">What do you love to eat the most?</label>
+            <input id="favoriteFood" type="text" placeholder="Type your favorite food">
+        </div>
+        <p>
+            <input type="password" placeholder="password">
+        </p>
         <input type="color">
         <input type="date">
+
+        <div>
+            <button type="button">
+                Press meeee
+            </button>
+            <button>Dont press me, it will submit the form!!</button>
+
+        </div>
+
     </form>
 
 </body>
