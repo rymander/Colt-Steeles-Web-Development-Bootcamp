@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration</title>
+</head>
+
+<body>
+    <h2>Register for the Race</h2>
+    <form action="/register_race">
+        <div>
+            <h3>Enter your name</h3>
+            <input type="text" name="firstName" placeholder="First Name">
+            <label for="firstName"></label>
+            <input type="text" name="lastName" placeholder="Last Name">
+            <label for="lastName"></label>
+            <label for="email"></label>
+            <input type="email" name="email" id="" placeholder="email address">
+
+        </div>
+
+        <div>
+            <label for="car"> Enter year, make, model</label>
+            <input type="text" name="car" id="car">
+            <label for="mods">How modified is your car?</label>
+            <select name="mods" id="mods">
+                <option value="stock">Stock</option>
+                <option value="slightlyModded">Slightly Modded (springs/coils, still street legal)</option>
+                <option value="veryModded">Very Modded (tuned, internal engine work, etc)</option>
+                <option value="racePrepped">Race Prepped (gutted and competetive)</option>
+            </select>
+            <p>
+                <label for="group">What group to run?</label>
+                <input type="radio" name="group" id="beginner" value="beginner">
+                <label for="">Beginner</label>
+                <input type="radio" name="group" id="intermediate" value="intermediate">
+                <label for="">Intermediate</label>
+                <input type="radio" name="group" id="seasonedracer" value="seasonedracer">
+                <label for="">Seasoned Racer</label>
+
+            </p>
+        </div>
+        <button>Register!</button>
+    </form>
+
+</body>
+
+</html>
