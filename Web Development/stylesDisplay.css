@@ -1,0 +1,12 @@
+h1 {
+    background-color: palegoldenrod;
+    border: 2px solid grey;
+
+}
+
+span {
+    background-color: lightslategray;
+    border: 2px solid black;
+    display: block;
+    width: 400px;
+}
