@@ -1,0 +1,109 @@
+/* h1 {
+    text-align: center;
+    letter-spacing: 8px;
+}
+*/
+.example {
+    width: 300px;
+    height: 400px;
+    border-radius: 50%;
+    display: block;
+    border: 2px solid gray;
+    margin: auto;
+}
+
+.bubble {
+    border-radius: 25px;
+    background-color: bisque;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 4rem;
+    background-color: #c2a2fe;
+
+}
+
+/* Style the main heading */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #4d4d4d;
+    margin-top: 1rem;
+}
+
+/* Style the subheadings */
+h2 {
+    font-size: 1.5rem;
+    color: #4d4d4d;
+    margin-top: 1.5rem;
+}
+
+/* Style the image 
+.example {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+} */
+
+/* Style the paragraphs */
+p {
+    font-size: 1.2rem;
+    color: #333333;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+    text-align: justify;
+}
+
+/* Style the ordered list */
+ol {
+    font-size: 1.2rem;
+    color: #333333;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+/* Style the list items */
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Style the links */
+a {
+    color: #74adf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Style the section */
+section {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the links in the footer */
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Style the footer */
+footer {
+    background-color: #4d4d4d;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
