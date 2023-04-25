@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: dimgray;
+}
+
 h1 {
     background-color: palegoldenrod;
     border: 2px solid grey;
@@ -9,4 +16,35 @@ span {
     border: 2px solid black;
     display: block;
     width: 400px;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: darkslateblue;
+    transition: 0.3s;
+    margin: 40px;
+
+}
+
+.circle:hover {
+    background-color: lightseagreen;
+    border-radius: 50%;
+}
+
+.buttonAnimate {
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: all 0.15s;
+}
+
+.buttonAnimate:hover {
+    border-color: royalblue;
+    color: skyblue;
+    box-shadow: 0 0.5em 0.5em -0.4em skyblue;
+    transform: translateY(-.25em);
+    cursor: pointer;
 }
