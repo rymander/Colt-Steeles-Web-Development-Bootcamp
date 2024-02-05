@@ -1,0 +1,19 @@
+li {
+    margin: 1.5em;
+    display: block;
+}
+
+li:hover {
+    cursor: url(/customStyles.images/icons8-macos-close-32.png), auto;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+body {
+    background-color: rgb(219, 155, 214);
+    text-align: center;
+}
+
+

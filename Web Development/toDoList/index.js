@@ -3,21 +3,33 @@ let addBtn = document.getElementById('add')
 let item = document.getElementById('item')
 let lis = document.querySelectorAll('li')
 
-
-
-addBtn.addEventListener('click', function(event){
+let myForm = document.getElementById('myForm').addEventListener('submit',function(e){
     let value = item.value;
-    let li = document.createElement('li')
+    let li = document.createElement('li');
     li.textContent = value
     list.appendChild(li);
-    event.preventDefault();
+    item.value = ''
+
+    li.addEventListener('click',function(e){
+        e.target.remove();
+    })
+    e.preventDefault()
 })
 
-document.querySelector(submit).addEventListener('click', function(e){
+
+
+addBtn.addEventListener('click', function(e){
+    let value = item.value;
+    let li = document.createElement('li');
+    li.textContent = value
+    list.appendChild(li);
+    item.value = ''
+
+    li.addEventListener('click',function(e){
+        e.target.remove();
+    })
     e.preventDefault();
 })
 
-lis.addEventListener('double click', function(e){
-    e.preventDefault();
-    
-})
+
+
