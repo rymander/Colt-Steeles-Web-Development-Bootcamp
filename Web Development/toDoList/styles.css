@@ -3,6 +3,11 @@ li {
     display: block;
 }
 
+ul {
+    width: 30%;
+    text-align: center;
+}
+
 li:hover {
     cursor: url(/customStyles.images/icons8-macos-close-32.png), auto;
 }
@@ -17,3 +22,6 @@ body {
 }
 
 
+.crossed {
+    text-decoration: line-through;
+}

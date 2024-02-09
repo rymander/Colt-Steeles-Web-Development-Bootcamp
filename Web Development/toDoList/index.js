@@ -11,7 +11,7 @@ let myForm = document.getElementById('myForm').addEventListener('submit',functio
     item.value = ''
 
     li.addEventListener('click',function(e){
-        e.target.remove();
+        e.target.classList.toggle('crossed');
     })
     e.preventDefault()
 })
@@ -26,7 +26,7 @@ addBtn.addEventListener('click', function(e){
     item.value = ''
 
     li.addEventListener('click',function(e){
-        e.target.remove();
+        e.target.classList.toggle('crossed');
     })
     e.preventDefault();
 })
