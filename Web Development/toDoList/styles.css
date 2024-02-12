@@ -1,12 +1,11 @@
 li {
     margin: 1.5em;
     display: block;
+    text-align: center;
+    
 }
 
-ul {
-    width: 30%;
-    text-align: center;
-}
+
 
 li:hover {
     cursor: url(/customStyles.images/icons8-macos-close-32.png), auto;
