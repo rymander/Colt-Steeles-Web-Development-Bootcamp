@@ -1,0 +1,14 @@
+#logo {
+    max-width: 50%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+    background-color: burlywood;
+}
+
+.sprite:hover {
+    transform: scale(1.5);
+}
