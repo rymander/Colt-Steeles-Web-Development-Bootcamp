@@ -1,7 +1,12 @@
 const express = require('express')
 const app = express()
+const redditData = require('./data.json')
+const e = require('express')
+const path = require('path')
 
+app.use(express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, '/views'))
 
 app.get('/', (req, resp) =>{
     const num = Math.floor(Math.random() *10) + 1;
@@ -10,7 +15,14 @@ app.get('/', (req, resp) =>{
 
 app.get('/r/:subreddit', (req, res)=>{
     const { subreddit } = req.params;
-    res.render('subreddit', { subreddit })
+    const data = redditData[subreddit]
+    console.log(data)
+    if(data){
+        res.render('subreddit', { ...data })
+    } else{
+        res.render('notfound', {subreddit}) 
+    }
+    
 })
 
 app.get('/models', (req, res)=>{
