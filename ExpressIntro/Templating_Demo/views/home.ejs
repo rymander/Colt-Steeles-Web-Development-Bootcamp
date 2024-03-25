@@ -12,8 +12,21 @@
 Ipsam consequatur aliquid rem, corporis, fugit vitae accusamus veritatis alias culpa, deserunt harum porro dignissimos obcaecati eligendi eum laborum fugiat placeat ipsa aspernatur. Aut deserunt consequuntur ut nulla sequi? Dolor.
 Sint odio excepturi autem adipisci? Voluptate, magnam. Labore minima debitis eius harum? Repudiandae, autem! Impedit cum veniam nulla at nam a dignissimos commodi adipisci. Optio tempore odio officiis veniam nisi.</p>
 
-<h2>Your Random Number is : <%= rand%>
-</h2>
+<h2>Your Random Number is : <%= rand%></h2>
+
+<% if(rand % 2 === 0){ %>
+    <h2>That is an even number!</h2>
+    <% } else { %>
+    <h2>That is an odd number!</h2>
+    <% } %>
+    <p>Here's an alternate way of doing it:</p>
+    <h3>That number is: <%= rand%2===0 ? 'EVEN' : 'ODD' %></h3>
+
+<h2></h2>
+
+<h2>Loops</h2>
 
 </body>
 </html>
+
+

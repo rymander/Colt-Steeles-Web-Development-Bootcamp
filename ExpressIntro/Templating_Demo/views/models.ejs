@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= subreddit %></title>
+    <title>Honda Models</title>
 </head>
 <body>
-    <h1>Browsing the <%= subreddit %> Subreddit</h1>
-
+<h1>Honda Models</h1>
+<ul>
+    <%for(let model of models){ %>
+        <li> <%=model%></li>
+   <% } %>
+</ul>
     
 </body>
 </html>
