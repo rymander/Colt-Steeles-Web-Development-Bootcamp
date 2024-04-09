@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Review</title>
+</head>
+<body>
+    <h1>Make a new review</h1>
+    <form action="/reviews" method="post">
+        <section>
+       <label for="business">Enter business name</label>
+        <input type="text" name="business" id="" placeholder="Business Name">
+    </section>
+    <section>
+        <label for="username">Your username</label>
+        <input type="text" name="username" id="username" placeholder="username">
+    </section>
+    <section>
+        <label for="review">Review text:</label>
+        <textarea name="review" id="review" cols="30" rows="10"></textarea>
+    </section>
+    <button type="submit">Submit Review</button>
+    </form>
+
+    <a href="/reviews">Back to reviews</a>
+</body>
+</html>

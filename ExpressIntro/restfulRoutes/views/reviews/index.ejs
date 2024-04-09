@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews Index</title>
+</head>
+<body>
+    <h1>Reviews</h1>
+    <ul>
+        <%for(let r of reviews){%>
+            <li><%= r.business %> <br>- <%=r.review%><b> -<%= r.username%></b>
+            <a href="/reviews/<%= r.id %>">Details</a>
+        <a href="/reviews/<%= r.id %>/patch">Edit</a></li>
+        <%}%>
+    </ul>
+
+
+    <a href="/reviews/new">Add new review</a>
+</body>
+</html>
