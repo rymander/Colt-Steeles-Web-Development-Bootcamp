@@ -62,7 +62,7 @@ app.get('/krabbypatty', verifyPass, (req, res)=>{
 // })
 app.use((err, req, res, next)=>{ //everything above is checked to see for a route, if nothing is found, this runs
     const { status = 500, message = 'SomethiNG WENT WRONG!!' } = err;
-    res.status(status).send(message)
+    res.status(status).render('error')
 })
 
 
