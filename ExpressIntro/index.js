@@ -1,10 +1,13 @@
 const express = require('express')
 const app = express()
+const colors = require('colors')
 
 // app.use((req, res)=>{
     
     
 // })
+
+
 app.get('r/:subreddt', (req, res)=>{
     res.send('This is a subreddit!')
 })
@@ -42,5 +45,5 @@ app.get('*', (req, res) =>{
 //  /dogs
 // /home
 app.listen(3000, ()=>{
-    console.log('Listening on port: 3000')
+    console.log(colors.rainbow('Listening on port: 3000'))
 })

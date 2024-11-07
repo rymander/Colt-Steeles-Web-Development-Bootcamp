@@ -8,9 +8,9 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, '/views'))
 
-app.get('/', (req, resp) =>{
+app.get('/', (req, res) =>{
     const num = Math.floor(Math.random() *10) + 1;
-    resp.render('home', {rand: num})
+    res.render('home', {rand: num})
 })
 
 app.get('/r/:subreddit', (req, res)=>{
